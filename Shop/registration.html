@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Registration</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- как можно вставить ссылкой хедер и футер с главной? -->
+		<header class="header">
+			<div class="container">
+				<nav class="header__navi">
+					<ul class="header__logoseek">
+						<li class="header__logo"><a href="index.html"><img class="header__imglogo"
+									src="img/header/logotip.svg" alt="logotip"></a>
+						</li>
+						<li class="header__seek">
+
+							<form class="example" action="#">
+								<input class="header__input" type="text" placeholder="поиск.." name="search1">
+								<!--изучить как это делать-->
+								<button type="submit"><img src="img/header/seek.svg" alt="search"></button>
+							</form>
+						</li>
+					</ul>
+					<nav class="helptime"> (Временно для удобства)
+						<ul class="navtimelist">
+							<li class="navtimeitem"> <a href="index.html" class="navtimehref">Главная </a> </li>
+							<li class="navtimeitem"> <a href="catalog.html" class="navtimehref">Каталог </a> </li>
+							<li class="navtimeitem"> <a href="product.html" class="navtimehref">Продукт </a> </li>
+							<li class="navtimeitem"> <a href="cart.html" class="navtimehref">Корзина </a> </li>
+							<li class="navtimeitem"> <a href="registration.html" class="navtimehref">Регистрация
+								</a> </li>
+						</ul>
+					</nav>
+					<ul class="header__navilogcart">
+						<li class="header__burger"><a href="#"><img src="img/header/burg.svg" alt="burger"></a>
+							<!--TO DO: сделать "бургер"-->
+						</li>
+						<li class="header__login"><a href="registration.html"><img src="img/header/login.svg"
+									alt="login"></a></li>
+						<!--TO DO: сделать регистрацию"-->
+						<li class="header__cart"><a href="#"><img src="img/header/cart.svg" alt="cart"></a></li>
+						<!--TO DO: сделать корзину-->
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<nav class="titlereg container">
+			<h3 class="titlereg__h3">registration</h3>
+		</nav>
+		<div class="registration container">
+			<div class="registration__inner">
+				<div class="registration__box">
+					<form class="registration__form" action="#">
+						<legend class="registration__title">Your Name</legend>
+						<!-- <label for="name">First Name <em>*</em></label> -->
+						<input class="registration__input" id="firstname" placeholder="First Name" autofocus required>
+						<br>
+						<!-- <label for="name">Last Name <em>*</em></label> -->
+						<input class="registration__input" id="lastname" placeholder="Last Name" required>
+						<br>
+						<label for="male">
+							<input class="registration__radio" id="radio" type="radio" name="gender"> Male</label>
+						<label for="female">
+							<input class="registration__radio" id="radio" type="radio" name="gender"> Female</label>
+
+
+						<legend class="registration__title">Login details</legend>
+						<input class="registration__input" id="email" placeholder="Email" required type="email">
+						<br>
+						<input class="registration__input" type="password" maxlength="25" size="40" name="password">
+						<p class="registration__textform">Please use 8 or more characters, with at least 1 number
+							and a
+							mixture of uppercase and lowercase letters</p>
+					</form>
+				</div>
+				<div class="registration__listloyalty">
+					<h4 class="registration__h4">loyalty has its perks</h4>
+					<p class="registration__text">Get in on the loyalty program where you can earn points and unlock
+						serious
+						perks. Starting with these as soon as you join:</p>
+					<ul class="registration__list">
+						<li class="registration__item">15% off welcome offer
+						</li>
+						<li class="registration__item">Free shipping, returns and exchanges on all orders
+
+						</li>
+						<li class="registration__item">$10 off a purchase on your birthday
+
+						</li>
+						<li class="registration__item">Early access to products</li>
+						<li class="registration__item">Exclusive offers & rewards</li>
+					</ul>
+				</div>
+			</div>
+
+			<button class="button">join now&nbsp;&nbsp;&nbsp;&nbsp;<svg width="17" height="10" viewBox="0 0 17 10"
+					fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z"
+						fill="white" />
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"
+						fill="white" />
+				</svg>
+			</button>
+
+
+
+		</div>
+
+		<div class="subscription">
+			<div class="container">
+				<div class="subscription__wrapper">
+					<div class="subscription__slogan">
+						<img src="img/subscription/foto.png" alt="foto">
+						<p class="subscription__quote">
+							<q>Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a
+									pulvinar
+									purus condimentum</i> </q>
+						</p>
+					</div>
+					<div class="subscription__button">
+						<div class="subscription__title">
+							<h3 class="subscription__h3">
+								subscribe
+
+							</h3>
+							<p class="subscription__text">
+								for our newletter and promotion
+							</p>
+						</div>
+						<form action="#">
+							<input class="subscription__input" type="text" placeholder="Enter Your Email"
+								name="search1">
+							<!--думаю будет нужен-->
+							<button class="subscription__buttonclick" type="submit">Subscribe</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__text">
+						<p>&copy;2021 Brand All Rights Reserved.</p>
+					</div>
+					<div class="footer__socseti">
+						<div class="footer__list">
+							<a class="footer__item" href="#"><img class="footer__img" src="img/footer/facebook.svg"
+									alt="facebook"></a>
+
+							<a class="footer__item" href="#"><img src="img/footer/instagram.svg" alt="instagram"></a>
+							<a class="footer__item" href="#"><img src="img/footer/pinterest.svg" alt="Pinterest"></a>
+							<a class="footer__item" href="#"><img src="img/footer/twitter.svg" alt="twitter"></a>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+
+	</div>
+	</div>
+
+</body>
+
+</html>
