@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  /*border: blue 1px solid; что бы видеть блоки*/
+  /*border: blue 1px solid;*/
 }
 
 /*ограничения размеров, что бы сайт не расмолзался на всю ширину экрана*/
@@ -106,7 +106,7 @@ summary::-webkit-details-marker {
 
 .header__input {
   background: #222222;
-  height: 100%;
+  height: 45px;
   border: none;
   outline: none;
   color: #e1e1e1;
@@ -1007,9 +1007,194 @@ form.example button {
 }
 
 /*Cart*/
-.carth1 {
-  margin-top: 15%;
+.price {
+  font-size: 24px;
+  line-height: 29px;
+  color: #ef5b70;
+}
+
+.cart {
+  margin-top: 96px;
+  margin-bottom: 144px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cart__elementitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 306px;
+  border: #1111 1px solid;
+  -webkit-box-shadow: 15px 15px 15px 0px rgba(50, 50, 50, 0.1);
+  box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cart__elementitem:not(:first-child) {
+  margin-top: 40px;
+}
+
+.cart__imgblock {
+  width: 262px;
+}
+
+.cart__textblock {
+  padding-left: 31px;
+  width: 360px;
+  position: relative;
+}
+
+.cart__nameproduct {
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #222222;
+  margin-top: 22px;
+  margin-bottom: 42px;
+}
+
+.cart__priceproduct, .cart__colorproduct, .cart__sizeproduct, .cart__quantityproduct {
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+  margin-bottom: 6px;
+}
+
+.cart__buttonlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 72px;
+}
+
+.cart__buttonclear, .cart__buttoncontine {
+  display: block;
+  width: 235px;
+  height: 50px;
+  border: #111 1px solid;
   text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #a4a4a4;
+  color: #000000;
+}
+
+.cart__svgclose {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+}
+
+.cart__leftlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cart__nameform {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.cart__input {
+  width: 360px;
+  height: 45px;
+  margin-top: 20px;
+  padding-left: 16px;
+}
+
+.cart__buttonget {
+  margin-top: 20px;
+  width: 100px;
+  height: 35px;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  background: #ffffff;
+  border: 1px solid #a4a4a4;
+}
+
+.cart__checkout {
+  text-align: end;
+  margin-top: 58px;
+  padding-right: 25px;
+  width: 360px;
+  height: 214px;
+  background: #f5f3f3;
+}
+
+.cart__lefttext {
+  padding: 39px 34px 12px 0;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #4a4a4a;
+}
+
+.cart__namecheckout {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #222222;
+  margin-right: 37px;
+  margin-bottom: 21px;
+}
+
+.cart__hr {
+  width: 275px;
+  margin: auto;
+}
+
+.cart__checkoutbutton {
+  width: 273px;
+  height: 50px;
+  background: #f16d7f;
+  margin-top: 17px;
+  margin-right: 43px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.cart__price {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+}
+
+.wrappercart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /*Registration*/
