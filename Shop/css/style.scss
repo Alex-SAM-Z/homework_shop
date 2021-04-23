@@ -1,4 +1,5 @@
 $colorSelect: #ef5b70;
+$colorSelectd7f: #f16d7f;
 $width4: 360px;
 @mixin categoryfilter {
 	font-size: 14px;
@@ -41,7 +42,7 @@ summary::-webkit-details-marker {
 	font-size: 24px;
 	line-height: 29px;
 	font-weight: 400;
-	color: #f16d7f;
+	color: $colorSelectd7f;
 	text-transform: uppercase;
 }
 @mixin buttonform {
@@ -54,7 +55,7 @@ summary::-webkit-details-marker {
 
 .helptime {
 	align-self: center;
-	color: #f16d7f;
+	color: $colorSelectd7f;
 	text-align: center;
 }
 .navtimelist {
@@ -66,7 +67,7 @@ summary::-webkit-details-marker {
 	list-style-type: none;
 }
 .navtimehref {
-	color: #f16d7f;
+	color: $colorSelectd7f;
 	text-decoration: none;
 }
 
@@ -124,7 +125,7 @@ form.example button /*для поля поиска*/ {
 		width: 100%;
 	}
 	&__title {
-		border-left: #f16d7f 12px solid;
+		border-left: $colorSelectd7f 12px solid;
 		height: 93px;
 		margin-top: 16%;
 		margin-left: 4%;
@@ -146,7 +147,7 @@ form.example button /*для поля поиска*/ {
 	}
 }
 .redstrongtext {
-	color: #f16d7f;
+	color: $colorSelectd7f;
 	text-transform: uppercase;
 }
 
@@ -682,9 +683,39 @@ form.example button /*для поля поиска*/ {
 
 /*Product*/
 .product {
+	position: relative;
 	&__slaider {
 		text-align: center;
 		background: #f7f7f7;
+	}
+	&__img {
+	}
+
+	&__slaiderleftclick {
+		text-align: center;
+		padding-top: 12px;
+		width: 47px;
+		height: 47px;
+		background: rgba(42, 42, 42, 0.15);
+		box-sizing: border-box;
+		position: absolute;
+		left: 0;
+		top: 50%;
+	}
+
+	&__svg {
+	}
+
+	&__slaiderrightclick {
+		text-align: center;
+		padding-top: 12px;
+		width: 47px;
+		height: 47px;
+		background: rgba(42, 42, 42, 0.15);
+		box-sizing: border-box;
+		position: absolute;
+		right: 0;
+		top: 50%;
 	}
 
 	&__addbotton {
@@ -710,7 +741,7 @@ form.example button /*для поля поиска*/ {
 		font-weight: 300;
 		font-size: 14px;
 		line-height: 17px;
-		color: #f16d7f;
+		color: $colorSelectd7f;
 		text-transform: uppercase;
 		margin-top: 65px;
 		margin-bottom: 12px;
@@ -766,8 +797,8 @@ form.example button /*для поля поиска*/ {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		color: #f16d7f;
-		border: #f16d7f 1px solid;
+		color: $colorSelectd7f;
+		border: $colorSelectd7f 1px solid;
 		width: 210px;
 		margin-top: 48px;
 		margin-bottom: 65px;
@@ -934,7 +965,7 @@ form.example button /*для поля поиска*/ {
 	&__checkoutbutton {
 		width: 273px;
 		height: 50px;
-		background: #f16d7f;
+		background: $colorSelectd7f;
 		margin-top: 17px;
 		margin-right: 43px;
 		font-weight: 300;
@@ -942,6 +973,7 @@ form.example button /*для поля поиска*/ {
 		line-height: 19px;
 		text-transform: uppercase;
 		color: #ffffff;
+		border: none;
 	}
 	&__price {
 		font-size: 16px;
@@ -1046,7 +1078,7 @@ form.example button /*для поля поиска*/ {
 .button {
 	@include buttonform();
 	width: 168px;
-	background-color: #f16d7f;
+	background-color: $colorSelectd7f;
 	margin-bottom: 96px;
 	color: white;
 	border: none;
